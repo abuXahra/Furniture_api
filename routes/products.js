@@ -10,4 +10,8 @@ router.get("/:id", productController.getProduct);
 
 router.get("/search/:key", productController.searchProducts);
 
+router.put("/:id", productController.updateProduct);
+
+router.delete("/:id", productController.deleteProduct);
+
 module.exports = router;
