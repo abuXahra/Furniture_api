@@ -52,12 +52,10 @@ exports.updateProduct = async (req, res) => {
       return res.status(404).json("Product not found");
     }
 
-    res
-      .status(200)
-      .json({
-        message: "Product updated successfully",
-        product: updatedProduct,
-      });
+    res.status(200).json({
+      message: "Product updated successfully",
+      product: updatedProduct,
+    });
   } catch (error) {
     res.status(500).json("Fail to update the Product");
   }
